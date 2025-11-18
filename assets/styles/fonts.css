@@ -1,0 +1,98 @@
+/* ================================
+   F O N T - F A C E S
+   ================================ */
+
+/* --- Raleway (Body Font) --- */
+@font-face {
+  font-family: "Raleway";
+  src: url("./Raleway/Raleway-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("./Raleway/Raleway-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("./Raleway/Raleway-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("./Raleway/Raleway-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+
+/* --- Oswald (Heading Font) --- */
+@font-face {
+  font-family: "Oswald";
+  src: url("./Oswald/Oswald-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: url("./Oswald/Oswald-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: url("./Oswald/Oswald-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+
+/* --- PT Sans (Labels, Meta Infos) --- */
+@font-face {
+  font-family: "PT Sans";
+  src: url("./PT_Sans/PTSans-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("./PT_Sans/PTSans-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+
+
+/* ================================
+   T Y P O G R A P H Y  D E F A U L T S
+   ================================ */
+
+/* Default Text → Raleway */
+html, body, p, span, a, li, button, input {
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 0.2px;
+  font-weight: 400;
+}
+
+/* Headlines → Oswald */
+h1, h2, h3 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Kleine Labels → PT Sans */
+.label,
+.small-info,
+#rating,
+.dish small {
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  color: #666;
+}

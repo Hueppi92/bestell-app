@@ -1,0 +1,50 @@
+html {
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+
+}
+
+main {
+  flex: 1;
+}
+
+header {
+  background-color: rgb(255, 128, 0);
+  height: 100px;
+  width: 100%;
+}
+
+.headerImg {
+  height: 64px;
+  margin: 10px;
+}
+
+#rating {
+  color: brown;
+}
+
+.top-logo-round {
+  display: flex;
+  justify-content: center;
+  z-index: 1500;
+  position: relative;
+  bottom: 95px;
+}
+.top-logo-round img {
+  border-radius: 50%;
+  filter: drop-shadow(0px 10px 10px grey);
+  flex-shrink: 1;
+}
+
+#restaurant_bg_top {
+  background-image: url("./assets/img/food-banner.png");
+  background-size: cover;
+  background-position: bottom;
+  height: 250px;
+}

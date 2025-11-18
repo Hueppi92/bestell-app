@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet" href="./standard.css">
+    <link rel="stylesheet" href="./assets/styles/dish.css">
+    <link rel="stylesheet" href="./assets/styles/fonts.css">
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon/favicon.ico">
+    <script src="db.js"></script>
+    <title>Bestell-App</title>
+</head>
+<body onload="render_dishes()" >
+    <header>
+        <headerInner>
+            <img class="headerImg" src="./assets/img/logo/Bestell App- Logo.svg">
+        </headerInner>
+    </header>       
+    </div>
+<div id="cart-icon" onclick="event.stopPropagation(); openCart()" >
+  🛒
+</div>
+    
+    <main>
+        <div id="restaurant_bg_top"></div>
+        <div class="top-logo-round"><img src="./assets/img/favicon/android-chrome-192x192.png"></div>
+        <div class="restaurant_name content">
+            <h2>Lunch Paradise</h2>
+            <p id="rating">Bewertung (4,2 von 5 Sternen)</p>
+        </div>
+
+<nav id="dish_nav" class="content">
+  <div>
+    <a id="meal-link-1" class="meal-nav-item active" onclick="setActiveMealNav(1)" href="#main-dishes">
+      Hauptgerichte
+    </a>
+  </div>
+
+  <div>
+    <a id="meal-link-2" class="meal-nav-item" onclick="setActiveMealNav(2)" href="#side-dishes">
+      Beilagen
+    </a>
+  </div>
+</nav>
+
+
+
+
+        <section class="content">
+              <h2>Hauptgerichte</h2>
+            <div class="main-dishes content" id="main-dishes">
+              
+            </div>
+        </section>
+
+        <section class="content">
+           <h2>Beilagen</h2>
+            <div class="side-dishes content" id="side-dishes">
+                 
+            </div>
+        </section>
+
+       <aside id="cart" class="cart" onclick="event.stopPropagation()">
+  
+</aside>
+
+    </main>
+
+    <footer>
+        <footer-inner></footer-inner>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="template.js"></script>
+      
+</body>
+</html>
