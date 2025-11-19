@@ -1,98 +1,71 @@
-/* ================================
-   F O N T - F A C E S
-   ================================ */
-
-/* --- Raleway (Body Font) --- */
-@font-face {
-  font-family: "Raleway";
-  src: url("./Raleway/Raleway-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Raleway";
-  src: url("./Raleway/Raleway-Medium.woff2") format("woff2");
-  font-weight: 500;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Raleway";
-  src: url("./Raleway/Raleway-SemiBold.woff2") format("woff2");
-  font-weight: 600;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Raleway";
-  src: url("./Raleway/Raleway-Bold.woff2") format("woff2");
-  font-weight: 700;
-  font-display: swap;
-}
-
-/* --- Oswald (Heading Font) --- */
-@font-face {
-  font-family: "Oswald";
-  src: url("./Oswald/Oswald-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-display: swap;
-}
+/* ===================================
+   O S W A L D  (Variable Font)
+   =================================== */
 
 @font-face {
   font-family: "Oswald";
-  src: url("./Oswald/Oswald-SemiBold.woff2") format("woff2");
-  font-weight: 600;
+  src: url("fonts/Oswald/Oswald-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900; /* gesamte Weight-Range nutzbar */
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+/* ===================================
+   R A L E W A Y  (Variable Font)
+   =================================== */
+
+@font-face {
+  font-family: "Raleway";
+  src: url("fonts/Raleway/Raleway-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Oswald";
-  src: url("./Oswald/Oswald-Bold.woff2") format("woff2");
-  font-weight: 700;
+  font-family: "Raleway";
+  src: url("fonts/Raleway/Raleway-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
   font-display: swap;
 }
 
-/* --- PT Sans (Labels, Meta Infos) --- */
+
+
+/* ===================================
+   P T   S A N S  (klassische TTFs)
+   =================================== */
+
 @font-face {
   font-family: "PT Sans";
-  src: url("./PT_Sans/PTSans-Regular.woff2") format("woff2");
+  src: url("fonts/PT_Sans/PTSans-Regular.ttf") format("truetype");
   font-weight: 400;
+  font-style: normal;
   font-display: swap;
 }
 
 @font-face {
   font-family: "PT Sans";
-  src: url("./PT_Sans/PTSans-Bold.woff2") format("woff2");
-  font-weight: 700;
+  src: url("fonts/PT_Sans/PTSans-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
   font-display: swap;
 }
 
-
-/* ================================
-   T Y P O G R A P H Y  D E F A U L T S
-   ================================ */
-
-/* Default Text → Raleway */
-html, body, p, span, a, li, button, input {
-  font-family: "Raleway", sans-serif;
-  letter-spacing: 0.2px;
-  font-weight: 400;
+@font-face {
+  font-family: "PT Sans";
+  src: url("fonts/PT_Sans/PTSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
 
-/* Headlines → Oswald */
-h1, h2, h3 {
-  font-family: "Oswald", sans-serif;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-}
-
-/* Kleine Labels → PT Sans */
-.label,
-.small-info,
-#rating,
-.dish small {
-  font-family: "PT Sans", sans-serif;
-  font-size: 14px;
-  color: #666;
+@font-face {
+  font-family: "PT Sans";
+  src: url("fonts/PT_Sans/PTSans-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
 }

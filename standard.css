@@ -24,6 +24,31 @@ header {
   height: 64px;
   margin: 10px;
 }
+footer {
+  display:flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  background-color: rgb(255, 128, 0);
+  height: 80px;
+  width: 100%;
+}
+
+.footer-inner {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items:baseline;
+  width:100%;
+}
+
+footer img {
+  height: 64px;
+  margin: 0px;
+}
+
+footer span {
+  text-align:center;
+}
 
 #rating {
   color: brown;
@@ -32,7 +57,7 @@ header {
 .top-logo-round {
   display: flex;
   justify-content: center;
-  z-index: 1500;
+ 
   position: relative;
   bottom: 95px;
 }

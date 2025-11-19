@@ -170,7 +170,9 @@ if (cart.classList.contains("visible")) {
 
 }
 function startOrder() {
-  alert("Bestellung wurde ausgelöst! ");
+  html += `
+    <div id="comfirmation"><p color="green"></p></div>
+  `
 }
 
 function clearCart() {
