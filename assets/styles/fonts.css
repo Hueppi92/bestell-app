@@ -1,20 +1,16 @@
-/* ===================================
-   O S W A L D  (Variable Font)
-   =================================== */
+
 
 @font-face {
   font-family: "Oswald";
   src: url("fonts/Oswald/Oswald-VariableFont_wght.ttf") format("truetype");
-  font-weight: 100 900; /* gesamte Weight-Range nutzbar */
+  font-weight: 100 900; 
   font-style: normal;
   font-display: swap;
 }
 
 
 
-/* ===================================
-   R A L E W A Y  (Variable Font)
-   =================================== */
+
 
 @font-face {
   font-family: "Raleway";
@@ -34,9 +30,7 @@
 
 
 
-/* ===================================
-   P T   S A N S  (klassische TTFs)
-   =================================== */
+
 
 @font-face {
   font-family: "PT Sans";
