@@ -7,7 +7,6 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0;
-
 }
 
 main {
@@ -25,7 +24,7 @@ header {
   margin: 10px;
 }
 footer {
-  display:flex;
+  display: flex;
   align-items: flex-end;
   justify-content: space-between;
   background-color: rgb(255, 128, 0);
@@ -34,11 +33,11 @@ footer {
 }
 
 .footer-inner {
-  display:flex;
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items:baseline;
-  width:100%;
+  align-items: baseline;
+  width: 100%;
 }
 
 footer img {
@@ -47,7 +46,7 @@ footer img {
 }
 
 footer span {
-  text-align:center;
+  text-align: center;
 }
 
 #rating {
@@ -57,14 +56,9 @@ footer span {
 .top-logo-round {
   display: flex;
   justify-content: center;
- 
+
   position: relative;
   bottom: 95px;
-}
-.top-logo-round img {
-  border-radius: 50%;
-  filter: drop-shadow(0px 10px 10px grey);
-  flex-shrink: 1;
 }
 
 #restaurant_bg_top {

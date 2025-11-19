@@ -10,10 +10,14 @@ function getCartItemTemplate(item) {
     <div class="cart-item">
       <div class="cart-item-left">
         <button class="cart-button"
-          onclick="changeAmount('${item.category}', ${item.index}, -1)">-</button>
-        <span>${item.quantity}</span>
+          onclick="changeAmount('${item.category}', ${
+    item.index
+  }, -1)">-</button>
+        <span id="price_span">${item.quantity}</span>
         <button class="cart-button"
-          onclick="changeAmount('${item.category}', ${item.index}, 1)">+</button>
+          onclick="changeAmount('${item.category}', ${
+    item.index
+  }, 1)">+</button>
         <span class="cart-item-name">${item.dish.name}</span>
       </div>
       <div class="cart-item-right">
@@ -49,21 +53,24 @@ function getCartButtonsTemplate() {
 }
 
 function getEmptyCartTemplate() {
-  return `<p>Dein Warenkorb ist leer.</p>`;
+  return `<p id="empty_cart">Dein Warenkorb ist leer.</p>`;
 }
 
-function getCartTemplate(state) {
-  let html = getCartHeaderTemplate();
-  html += `<div class="cart-items">`;
-  state.items.forEach(i => html += getCartItemTemplate(i));
-  html += `</div>`;
-  html += `<div id="order-confirmation"></div>`;
-  if (!state.hasItems) html += getEmptyCartTemplate();
-  else {
-    if (state.needsDelivery) html += getDeliveryRowTemplate();
-    html += getTotalRowTemplate(state.total);
-    html += getCartButtonsTemplate();
-  }
-  
-  return html;
+function getDishCardTemplate(category, index, dish, qty) {
+  return `
+    <div class="main-dish dish">
+      <div>
+        <span>${dish.name}</span>
+        <p>${dish.description}</p>
+        
+      </div>
+      <div class="button-container"><div class="button-div">
+        <button onclick="changeAmount('${category}', ${index}, -1)">-</button>
+        <span id="price_span">${qty}</span>
+        <button onclick="changeAmount('${category}', ${index}, 1)">+</button>
+        </div>
+        <b>${dish.price.toFixed(2)} €</b>
+      </div>
+
+    </div>`;
 }

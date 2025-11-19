@@ -1,6 +1,4 @@
-
 @import url("./fonts.css");
-
 
 * {
   box-sizing: border-box;
@@ -83,8 +81,8 @@ main {
 
 #cart-icon {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 100px;
+  right: 60px;
   font-size: 28px;
   background: #ff8000;
   color: #fff;
@@ -100,26 +98,22 @@ main {
   transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
+.top-logo-round img {
+  border-radius: 50%;
+  filter: drop-shadow(0px 10px 10px grey);
+  flex-shrink: 1;
+}
+
 #cart-icon:hover {
   transform: scale(1.08);
 }
 
-
-
-
 @media (max-width: 768px) {
+  .top-logo-round img {
+    position: absolute;
+  }
   .cart {
-    top: auto;
-    bottom: 0;
-    right: 0;
-    left: 0;
     width: 100%;
-    height: 90vh;
-    max-height: 90vh;
-    transform: translateY(100%);
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
-    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.2);
   }
 
   .cart.visible {
@@ -132,11 +126,19 @@ main {
     transition: padding-bottom 0.3s ease;
   }
 
+  body.cart-open {
+    overflow: hidden;
+    height: 100vh;
+    touch-action: none;
+  }
+
   #cart-icon {
     top: auto;
-    bottom: 16px;
+    bottom: 60px;
+    right:10px;
   }
 }
+
 @media (max-width: 480px) {
   h2 {
     font-size: 22px;
@@ -152,5 +154,40 @@ main {
 
   .cart-item-name {
     font-size: 14px;
+  }
+}
+
+#restaurant_bg_top {
+  position: relative;
+}
+
+.top-logo-round {
+  position: absolute;
+
+  left: 40%;
+  transform: translateX(50%);
+  transform: translateY(30%);
+  width: 120px;
+  height: 120px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+}
+
+.top-logo-round img {
+  width: 60%;
+  height: 60%;
+}
+
+@media (max-width: 480px) {
+  .top-logo-round {
+    width: 70px;
+    height: 70px;
+
+    transform: translateY(80%);
   }
 }
